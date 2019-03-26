@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kre8tives.bareboneneww.Activity.MainActivity"
+    android:id="@+id/CategoryFrag_container"
+    android:background="@drawable/barebones_main_image_grad">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/refrescategory"
+        android:src="@mipmap/ic_refre"
+        android:layout_gravity="center"
+        android:layout_marginStart="170dp"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="3dp"
+        android:id="@+id/categoryRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+</LinearLayout>

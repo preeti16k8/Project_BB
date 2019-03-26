@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/barebones_main_image_grad"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="1">
+    <!--<ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:background="@mipmap/ic_logo"
+        android:id="@+id/img_logo"
+        android:layout_weight="0.29"
+        tools:ignore="ContentDescription,InefficientWeight" />-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BAREBONES"
+        android:id="@+id/txtName"
+        android:textColor="#fff"
+        android:textSize="35sp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        tools:ignore="HardcodedText" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="8dp"
+        android:theme="@style/TextLabel"
+        app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout" >
+        <EditText
+            android:id="@+id/input_phone"
+            android:layout_width="280dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:hint="Phone Number"
+            android:textColor="@color/white"
+            android:backgroundTint="@android:color/primary_text_light"
+            android:textCursorDrawable="@drawable/color_cursor"
+            tools:ignore="HardcodedText" />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+   <!-- <ImageButton
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btn_login"
+        android:background="@drawable/sendotp"/>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkbox_terms"
+        android:buttonTint="@color/white"
+        android:layout_marginLeft="60dp"
+        tools:ignore="RtlHardcoded" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_termsConditions"
+            android:textSize="14dp"
+            android:textColor="@color/white"
+            android:text="I Agree to Terms &amp; Conditions"
+            tools:ignore="HardcodedText,SpUsage" />
+    </LinearLayout>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_login"
+        android:text="Send OTP"
+        android:textColor="@color/white"
+        android:background="@color/colorAccent"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>
+
+</ScrollView>
+    <!--  <android.support.v7.widget.AppCompatButton
+          android:id="@+id/btn_login"
+          android:layout_width="wrap_content"
+          android:layout_height="45dp"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="24dp"
+          android:padding="8dp"
+          android:textStyle="normal"
+          android:textSize="25sp"
+          android:layout_marginLeft="80dp"
+          android:background="@drawable/buttonshape"
+          android:textColor="@color/black"
+          android:text="SEND OTP"/>-->
+
+
+
+

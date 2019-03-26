@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/barebones_main_image_grad"
+android:orientation="vertical"
+tools:context="com.kre8tives.bareboneneww.com.kre8tives.barebonenew.Fragments.BrandItemFragment">
+
+<!-- TODO: Update blank fragment layout -->
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/refreshbrand"
+            android:src="@mipmap/ic_refre"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_marginTop="3dp"
+            android:id="@+id/rv_branditem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.kre8tives.bareboneneww">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+   <!-- <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+  <!--  <uses-permission android:name="android.permission.CAMERA" />-->
+   <!-- <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />-->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:name="com.kre8tives.bareboneneww.MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/new_ic_launch"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <receiver android:name="com.kre8tives.bareboneneww.Activity.VerifyActivity$SmsReceiver">
+            <intent-filter android:priority="99999">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.kre8tives.bareboneneww.Activity.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.kre8tives.bareboneneww.Activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kre8tives.bareboneneww.Activity.MainActivity"
+            android:screenOrientation="portrait"
+            tools:replace="screenOrientation" />
+        />
+        <activity
+            android:name="com.kre8tives.bareboneneww.Activity.VerifyActivity"
+            android:label="VERIFICATION"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kre8tives.bareboneneww.Activity.SetProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kre8tives.bareboneneww.Activity.StoreActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kre8tives.bareboneneww.Activity.UpdateProfileActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <service android:name="com.kre8tives.bareboneneww.services.SimpleIntentService"></service>
+        <!-- <service android:name=".services.MySimpleServiceOrder"/> -->
+        <service android:name="com.kre8tives.bareboneneww.Orders.TotalOrdersService"></service>
+        <service android:name="com.kre8tives.bareboneneww.MarketCrash.CounterService"></service>
+        <service android:name="com.kre8tives.bareboneneww.MarketCrash.MarketCrash"></service>
+
+        <!--
+            <service
+            android:name="com.kre8tives.bareboneabcdpl.services.MySimpleServiceOrder"
+            android:exported="false" />
+        -->
+        <service
+            android:name="com.kre8tives.bareboneneww.services.MySimpleService"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.kre8tives.bareboneneww.receivers.MyAlarmReceiver"
+            android:process=":remote" />
+
+        <activity android:name="com.kre8tives.bareboneneww.Activity.ExamplesActivity"></activity>
+        <service android:name="com.kre8tives.bareboneneww.services.BackgroundService"/>
+        <receiver android:name="com.kre8tives.bareboneneww.receivers.AlarmReceiver"/>
+    </application>
+
+</manifest>

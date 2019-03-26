@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/barebones_main_image_grad"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/priceLayout"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:weightSum="4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Liquor"
+            android:textColor="#FFDEAD"
+            android:textAlignment="center"
+            android:textSize="17sp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Max Price"
+            android:textAlignment="center"
+            android:textSize="17sp"
+            android:textColor="#FFDEAD"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Min Price"
+            android:textAlignment="center"
+            android:textSize="17sp"
+            android:textColor="#FFDEAD"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buy Now"
+            android:textColor="#FFDEAD"
+            android:textAlignment="center"
+            android:textSize="17sp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rv_priceList"
+        android:layout_below="@+id/priceLayout"
+        android:layout_marginTop="5dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/itemLoader"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/refreshItem"
+        android:tint="@color/colorPrimary"
+        android:src="@mipmap/ic_refresh"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true" />
+
+
+</RelativeLayout>

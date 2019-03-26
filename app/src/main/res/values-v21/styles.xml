@@ -1,0 +1,20 @@
+<resources>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+    <style name="StyleableToast">
+        <item name="android:colorBackground">@color/colorPrimaryDark</item>
+       <!-- <item name="android:icon">@drawable/ic_bar</item>-->
+        <!--<item name="android:textColor">@color/red</item>-->
+        <!--<item name="android:alpha">200</item>-->
+        <!--<item name="android:fontFamily">fonts/dosis.otf</item>-->
+        <!--<item name="android:strokeWidth">1</item>
+        <item name="android:strokeColor">@color/white</item>-->
+        <item name="android:radius">20sp </item>
+    </style>
+
+</resources>

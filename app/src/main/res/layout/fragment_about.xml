@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/barebones_main_image_grad"
+   >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="#fff"
+        android:textSize="14sp"
+      android:fontFamily="sans-serif-condensed"
+        android:textStyle="italic"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Make the perfect start to the day at BareBones with the space and time you need to relax, work or just get together. We have created extraordinary experiences by combining quality food and drink, a bustling atmosphere and elegant special touches. Whether you are visiting for a lazy brunch, breakfast, afternoon food, tea, evening cocktails or an intimate dinner, our all day brasserie and bars offer a stylish space to relax.
+BareBones can meet your needs any time of the day. Served cold &amp; a wide selection of wines sit alongside a carefully crafted seasonal menu, whilst music &amp; a late license until the early hours on thursdays &amp; fridays make the parlour the perfect place to start &amp; end the party. "/>
+    <!--<android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/about_recyclerview"
+        android:layout_marginTop="8dp">
+
+    </android.support.v7.widget.RecyclerView>-->
+</LinearLayout>

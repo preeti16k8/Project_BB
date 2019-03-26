@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/barebones_main_image_grad"
+    >
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?attr/actionBarSize"-->
+        <!--android:background="@drawable/toolbutton_border"-->
+        <!--android:elevation="1dp"-->
+        <!--&gt;-->
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:text="MY ORDERS"-->
+            <!--android:textSize="18dp"-->
+            <!--android:textColor="#ffff"-->
+            <!--android:gravity="center"-->
+            <!--/>-->
+
+    <!--</android.support.v7.widget.Toolbar>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp">
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#E1CB75"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="Date"
+            android:background="#11ffffff"
+            android:gravity="center"
+            android:textColor="#FFDEAD"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-thin"
+            android:textAlignment="center"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#E1CB75"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Order ID"
+            android:textColor="#FFDEAD"
+            android:gravity="center"
+           android:layout_weight="1"
+            android:background="#11ffffff"
+            android:fontFamily="sans-serif-thin"
+            android:textStyle="bold"
+            android:textSize="16sp"
+
+            android:textAlignment="center"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#E1CB75"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="Action"
+            android:gravity="center"
+            android:textColor="#FFDEAD"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-thin"
+            android:background="#11ffffff"
+            android:textSize="16sp"
+            android:textAlignment="center"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#E1CB75"/>
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/myOrderList_recycler">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

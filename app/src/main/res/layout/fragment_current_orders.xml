@@ -1,0 +1,89 @@
+<android.support.design.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+    <LinearLayout
+    android:id="@+id/ll_item_orderpreview"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#a999"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/orderId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-thin"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_marginStart="33dp"
+            android:text="Id"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/orderdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-thin"
+            android:text="Date"
+            android:textSize="20sp"/>
+
+
+        <TextView
+            android:id="@+id/orderStatus"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:fontFamily="sans-serif-thin"
+            android:gravity="center"
+            android:text="Status"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/orderAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:fontFamily="sans-serif-thin"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:text="Total"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_orderhistory"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="25dp"
+        android:layout_marginEnd="26dp"
+        android:src="@drawable/new_plus" />
+
+
+</android.support.design.widget.CoordinatorLayout>

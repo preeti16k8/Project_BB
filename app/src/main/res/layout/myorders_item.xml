@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#11ffffff"
+    android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:weightSum="3"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Date"
+                android:layout_weight="1"
+                android:textColor="#000"
+                android:gravity="center"
+                android:fontFamily="sans-serif-thin"
+                android:id="@+id/myordersDate"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textColor="#ffff"
+                android:layout_height="30dp"
+                android:text="Order-Id"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-thin"
+                android:gravity="center"
+                android:id="@+id/myordersId"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Status"
+                android:gravity="center"
+                android:textColor="#ffff"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-thin"
+                android:id="@+id/myordersStatus"
+                android:textSize="16sp"/>
+            <!--<ImageView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="0.2"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:id="@+id/mixtureSelector"-->
+            <!--android:background="@drawable/ic_clear_black"/>-->
+
+        </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#E1CB75"/>
+
+</LinearLayout>

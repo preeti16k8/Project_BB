@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="55dp">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FFDEAD"/>
+
+    <LinearLayout
+        android:id="@+id/ll_item_orderpreview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="5.3">
+
+        <TextView
+            android:id="@+id/biddingConfName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:background="#11ffffff"
+            android:gravity="center"
+            android:text="Item"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/biddingConfSinglePrice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.3"
+            android:background="#11ffffff"
+            android:gravity="center"
+            android:text="Price"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/biddingConfQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.6"
+            android:background="#11ffffff"
+            android:gravity="center"
+            android:text="Qty"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            tools:ignore="HardcodedText" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1.3"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/biddingConfPrice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:background="#11ffffff"
+                android:gravity="center"
+                android:text="Price"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText" />
+            <!-- android:fontFamily="sans-serif-thin"-->
+
+            <ImageView
+                android:id="@+id/image_delete"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:background="#11ffffff"
+                android:src="@mipmap/ic_delete"
+                android:tint="#fff" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

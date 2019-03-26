@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">BareBones</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text">\n<b><u>Terms &amp; Conditions</u></b>\n
+    By using our App you agree to be legally bound by these terms, which shall take effect immediately on your first use of our App. If you do not agree to be legally bound by all the following terms please do not access and/or use our App.\n
+        \n
+    </string>
+    <string name="notification">\n<b><u>Alert!</u></b>\n
+     Market Crash is On.................................   \n
+        \n
+    </string>
+
+    <string name="party">\n<b>Yippie! I knew it. Let’s party now</b>\n</string>
+    <string name="err_msg_email">Email is not valid</string>
+
+    <string name="quickstart_message">Click the SUBSCRIBE TO NEWS button below to subscribe to the
+        news topic. Messages sent to the news topic will be received. The LOG TOKEN button logs the
+        InstanceID token to logcat.</string>
+    <string name="subscribe_to_news">Subscribe To News</string>
+    <string name="log_token">Log Token</string>
+
+    <string name="msg_subscribed">Subscribed to news topic</string>
+    <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
+
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <!--
+        This is the name that users will see when interacting with this channel.
+        It should describe the category of notifications that will be sent through this channel
+     -->
+    <string name="default_notification_channel_name" translatable="true">News</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

@@ -1,0 +1,125 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/barebones_main_image_grad">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/editText_name"
+            android:layout_marginTop="45dp"
+            android:hint="Enter Name"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:singleLine="true"
+            android:layout_gravity="center"
+            android:layout_width="218dp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_centerHorizontal="true" />
+        <EditText
+            android:id="@+id/editText_email"
+            android:hint="Enter Email"
+            android:inputType="textWebEmailAddress"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:layout_width="218dp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText"
+            android:layout_below="@+id/editText_name"
+            android:layout_centerHorizontal="true" />
+        <EditText
+            android:id="@+id/editText_age"
+            android:hint="Enter DOB"
+            android:singleLine="true"
+            android:inputType="date"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:layout_width="218dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            tools:ignore="HardcodedText"
+            android:layout_below="@+id/editText_email"
+            android:layout_alignLeft="@+id/editText_email"
+            android:layout_alignStart="@+id/editText_email"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_currentDate"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_birthDate"/>
+
+        <Button
+            android:layout_width="218dp"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:background="@color/colorAccent"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:id="@+id/buttonContinue"
+            tools:ignore="HardcodedText"
+            android:layout_marginTop="11dp"
+            android:layout_below="@+id/editText_age"
+            android:layout_alignLeft="@+id/editText_age"
+            android:layout_alignStart="@+id/editText_age" />
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="80dp"
+            android:indeterminateTint="@color/white"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/progressloading" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayout"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="222dp"
+                android:layout_height="239dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/user"
+                android:id="@+id/imageView" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+
+                android:src="@mipmap/ic_camera_alt_white"
+                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="0dp"
+                android:id="@+id/buttonSelect"
+                android:layout_alignBottom="@+id/imageView"
+                android:layout_alignRight="@+id/imageView"
+                android:layout_alignEnd="@+id/imageView" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

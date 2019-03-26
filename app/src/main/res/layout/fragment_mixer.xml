@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/barebones_main_image_grad">
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:id="@+id/btn_skip"
+        android:textSize="16sp"
+        android:textColor="#fff"
+        android:text="SKIP"
+        android:background="@drawable/newbuttonstyle"
+       android:layout_gravity="end"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/refrescategory"
+        android:src="@mipmap/ic_refre"
+        android:layout_gravity="start"
+        android:layout_marginStart="170dp"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rv_mixturelist">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+
+</LinearLayout>

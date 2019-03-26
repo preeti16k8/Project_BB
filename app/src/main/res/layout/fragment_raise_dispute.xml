@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/barebones_main_image_grad"
+    android:weightSum="3"
+    tools:context="com.kre8tives.barebones.Fragments.RaiseDisputeFragment">
+<!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.20">
+
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="16sp"
+            android:id="@+id/feedbackEditText"
+            android:hint="Enter your Complaint/Feedback..."
+            android:textColorHint="#fff"
+            android:textCursorDrawable="@null"
+            android:textColor="#fff"
+            android:background="@null"
+            android:maxLines="10"
+            android:gravity="top"
+            android:minWidth="40dp"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25dp"
+        android:layout_weight="1"
+       android:layout_gravity="right"
+        android:weightSum="1">
+
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Submit"
+          android:id="@+id/btn_submit"
+          android:textSize="14sp"
+          android:paddingRight="5dp"
+          android:paddingLeft="5dp"
+          android:paddingTop="5dp"
+          android:paddingBottom="5dp"
+          android:textColor="#000"
+          android:drawableTint="#000"
+          android:fontFamily="sans-serif-thin"
+          android:layout_marginLeft="25dp"
+          android:textStyle="bold"
+          android:drawableRight="@mipmap/ic_send_white"
+          android:background="@drawable/button_border"
+          tools:ignore="HardcodedText,InefficientWeight,NestedWeights,RtlHardcoded"
+          android:layout_weight="0.70" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:id="@+id/callTowaiterButton"
+        android:layout_marginBottom="5dp">
+
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@drawable/button_border"
+           android:text="Call"
+           android:id="@+id/btn_call"
+           android:drawableLeft="@mipmap/ic_call_black"
+           android:drawableTint="#000"
+           android:textColor="#000"
+           android:textSize="14sp"
+           android:paddingRight="5dp"
+           android:paddingLeft="5dp"
+           android:paddingTop="5dp"
+           android:paddingBottom="5dp"
+           android:textStyle="bold"
+           android:fontFamily="sans-serif-thin"
+           tools:ignore="HardcodedText,InefficientWeight,NestedWeights,RtlHardcoded,UnusedAttribute"
+           android:layout_weight="1" />
+    </LinearLayout>
+
+
+</LinearLayout>

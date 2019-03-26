@@ -1,0 +1,203 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/barebones_main_image_grad">
+
+    <LinearLayout
+        android:id="@+id/tv_minmax"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <ImageView
+            android:id="@+id/imageView_ItmPrice"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_weight=".90" />
+
+        <TextView
+            android:id="@+id/tv_liquorimgname"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_weight="0.10"
+            android:fontFamily="sans-serif-thin"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#ffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/ll_Prices">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-thin"
+                android:textStyle="bold"
+                android:text="Max Price"
+                android:textAlignment="center"
+                android:textColor="#ffff"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-thin"
+                android:text="Min Price"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="#ffff"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/tv_liquorimgPriceMax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-thin"
+                android:text=""
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="#ffff"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tv_liquorimgPriceMin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-thin"
+                android:text=""
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="#ffff"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:id="@+id/ll_stopwatch">
+
+        <TextView
+            android:text="00:00:00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_stopwatch"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            tools:ignore="ObsoleteLayoutParam" />
+        <TextView
+            android:id="@+id/buynowcrash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-thin"
+            android:text="Market Crash Price"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="#ffff"
+            android:textSize="16dp">
+
+        </TextView>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="@drawable/round_button"
+            android:id="@+id/crash_price"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/price_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <Button
+            android:id="@+id/btn_imgpricebuynw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/newbuttonstyle"
+            android:text="BuyNow"
+            android:textColor="#fff"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/btn_imgpricebidnw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="1"
+            android:background="@drawable/newbuttonstyle"
+            android:text="Bid NOw"
+            android:textColor="#fff"
+            android:textSize="16dp" />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/refresh_itemprcimg"
+        android:src="@mipmap/ic_refre"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        tools:ignore="ObsoleteLayoutParam" />
+</LinearLayout>
+

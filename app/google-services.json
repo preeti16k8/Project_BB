@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "952435623435",
+    "firebase_url": "https://barebones-8166f.firebaseio.com",
+    "project_id": "barebones-8166f",
+    "storage_bucket": "barebones-8166f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:952435623435:android:ed7a9f83f443d60e",
+        "android_client_info": {
+          "package_name": "com.kre8tives.barebones"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "952435623435-2vml10sht0ncvh6f4lsagkpctv1600io.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBMcAhYsUo8yUojfF7lmRBy0CMHCSLVfo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/itemPriceLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:layout_marginTop="5dp"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/liquoritem"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:text="Item"
+            android:fontFamily="sans-serif-thin"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/liquorMaxPrice"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:text="Max Price"
+            android:fontFamily="sans-serif-thin"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/liquorMinPrice"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:text="Min Price"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-thin"
+            android:textAlignment="center"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/liquorBuyNow"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:text="Buy Now"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-thin"
+            android:textAlignment="center"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#ffff"/>
+
+</LinearLayout>

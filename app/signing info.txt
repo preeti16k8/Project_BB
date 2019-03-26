@@ -1,0 +1,9 @@
+bareboneabcdpl.jks
+password=android
+Alias=Barebone
+ABCDPL ABCDPL
+ABCDPL
+ABCDPL
+Bangalore
+Karnataka
+In

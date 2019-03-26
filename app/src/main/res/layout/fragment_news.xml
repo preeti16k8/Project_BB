@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/barebones_main_image_grad"
+    tools:context="com.kre8tives.bareboneneww.com.kre8tives.barebonenew.Fragments.AboutFragment">
+
+<!--<TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textColor="#fff"
+    android:textSize="18sp"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="50dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:text="Sorry!! No news Available right now."/>-->
+    <android.support.v7.widget.RecyclerView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/newsRecycler"
+           android:layout_marginTop="8dp">
+
+       </android.support.v7.widget.RecyclerView>
+</LinearLayout>

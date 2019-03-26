@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/barebones_main_image_grad">
+
+    <LinearLayout
+        android:id="@+id/ll_item_orderpreview"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#a999"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/orderId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-thin"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_marginStart="33dp"
+            android:text="Id"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/orderdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-thin"
+            android:text="Date"
+            android:textSize="20sp"/>
+
+
+        <TextView
+            android:id="@+id/orderStatus"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:fontFamily="sans-serif-thin"
+            android:gravity="center"
+            android:text="Status"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/orderAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:fontFamily="sans-serif-thin"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:text="Total"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+
+            />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rv_orderhistory">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+
+
+</LinearLayout>
+

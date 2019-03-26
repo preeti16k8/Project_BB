@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+  <!--  <group android:checkableBehavior="single">-->
+    <group>
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@mipmap/ic_home_black"
+            android:title="Home" />
+    </group>
+    <group>
+
+        <item
+            android:id="@+id/nav_dash"
+            android:icon="@mipmap/dashboard"
+            android:title="DashBoard" />
+    </group>
+    <group>
+
+        <item
+            android:id="@+id/nav_historyOrder"
+            android:icon="@mipmap/ic_reorder_black_24dp"
+            android:title="My Orders" />
+    </group>
+    <group>
+
+        <item
+            android:id="@+id/nav_change_table"
+            android:icon="@mipmap/table"
+            android:title="Change Table" />
+    </group>
+    <!--<group>
+
+        <item
+            android:id="@+id/nav_currentorder"
+            android:icon="@mipmap/dashboard"
+            android:title="Notification"
+
+            />
+    </group>-->
+   <!-- <group>
+
+        <item
+            android:id="@+id/nav_scanqr"
+            android:icon="@mipmap/ic_home_black"
+            android:title="Scan QR"
+
+            />
+    </group>-->
+
+
+   <!-- <group >
+        <item
+            android:id="@+id/nav_myFav"
+            android:icon="@mipmap/ic_favorite_border_black"
+            android:title="MY FAVOURITE"
+            />
+    </group>
+-->
+
+
+  <!--  <group  >
+        <item
+            android:id="@+id/nav_lqprice"
+            android:icon="@mipmap/ic_list_black"
+            android:title="LIQUOR PRICE" />
+    </group>-->
+
+
+    <group >
+
+        <item
+            android:id="@+id/nav_news"
+            android:icon="@mipmap/ic_local_offer_black"
+            android:title="News" />
+    </group>
+    <group >
+
+        <item
+            android:id="@+id/nav_raise"
+            android:icon="@mipmap/ic_help_black"
+            android:title="Raise Disputes" />
+    </group>
+
+
+
+
+    <group >
+
+        <item
+            android:id="@+id/nav_facebook"
+            android:icon="@mipmap/fb"
+            android:title="Facebook" />
+
+    </group>
+
+  <group >
+
+      <item
+          android:id="@+id/nav_twitter"
+          android:icon="@mipmap/twitter"
+          android:title="Twitter" />
+  </group>
+
+
+
+
+
+    <group >
+
+        <item
+            android:id="@+id/nav_rate"
+            android:icon="@mipmap/ic_grade_black"
+            android:title="Rate the app" />
+    </group>
+
+    <group>
+
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@mipmap/ic_share_black"
+            android:title="Share the app" />
+
+    </group>
+    <group>
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@mipmap/ic_info_outline_black"
+            android:title="About Barebones" />
+    </group>
+    <group >
+        <item
+            android:id="@+id/nav_terms"
+            android:icon="@mipmap/ic_lock_black"
+            android:title="Terms &amp; Conditions" />
+    </group>
+
+    <group>
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@mipmap/ic_power_settings_new_black"
+            android:title="Logout" />
+    </group>
+
+</menu>
